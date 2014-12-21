@@ -1,4 +1,4 @@
-ubuntu-apache2
-==============
+ubuntu14.04-apache2-python
+==========================
 
-An ubuntu apache2 docker file
+An ubuntu:14.04 apache2 with python docker file
