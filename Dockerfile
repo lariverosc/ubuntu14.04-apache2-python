@@ -8,11 +8,8 @@ RUN apt-get install -y python python-software-properties python-pip
 # Install OGC library
 RUN pip install OWSLib
 
-# Volumes
-VOLUME ["/var/www", "/var/log/apache2", "/etc/apache2"]
+# Expose ports
+EXPOSE 22 80 443
 
 # Define default command
 CMD ["apachectl", "-D", "FOREGROUND"]
-
-# Expose ports
-EXPOSE 22 80 443
